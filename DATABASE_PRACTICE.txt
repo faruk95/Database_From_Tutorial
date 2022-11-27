@@ -1,0 +1,13 @@
+Use [Demo]---
+Go   -------- first 2 line for changeing database
+Create Table tbgender
+( Id int NOT NULL Primary Key,
+Gender nvarchar(20) NOT NULL 
+)
+
+adding foreign key---------
+
+ALTER table tbstudent add constraint tbstudent_genderId_forignKey
+Foreign Key (Gender) references tbgender (Id)
+
+foreign key is..in video https://youtu.be/JLeaM8pK8dE
